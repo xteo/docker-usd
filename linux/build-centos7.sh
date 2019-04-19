@@ -8,7 +8,7 @@ export CUDA_VERSION="9.0"
 
 echo "Downloads folder: ${DOWNLOADS_DIR}"
 echo "Copy local root certificates for corporate networks"
-[ -e /etc/pki/ca-trust/source/anchors ] && cp -u /etc/pki/ca-trust/source/anchors/* cert/
+#[ -e /etc/pki/ca-trust/source/anchors ] && cp -u /etc/pki/ca-trust/source/anchors/* cert/
 
 export LOCAL_IP=`hostname -I|cut -d' ' -f1`
 
